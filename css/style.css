@@ -36,8 +36,12 @@ body {
   text-decoration: underline;
 }
 .nav {
-  height: 30px;
+  height: 29px;
+  position: relative;
   background-color: #333333;
+  border-bottom: 1px solid black;
+  box-shadow: 0 3px 2px #333333;
+  z-index: 3;
 }
 .nav li {
   float: left;
@@ -51,7 +55,9 @@ body {
   display: none;
   width: 142px;
   background-color: #333333;
+  box-shadow: 0 8px 5px #333333;
   position: absolute;
+  z-index: 2;
 }
 .nav li ul li {
   text-align: left;
@@ -83,6 +89,7 @@ body {
   line-height: 24px;
   font-size: 14px;
   text-align: center;
+  z-index: 1;
 }
 .news {
   width: 210px;
